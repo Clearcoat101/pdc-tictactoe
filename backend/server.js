@@ -5,7 +5,7 @@ import cors from 'cors';
 import http from 'http';
 import { Server } from 'socket.io';
 import { connectDB } from "./config/db.js";
-import authRoutes from './backend/routes/auth.js';
+import authRoutes from './routes/auth.route.js';
 
 const app = express();
 const server = http.createServer(app);
